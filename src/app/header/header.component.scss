@@ -1,0 +1,109 @@
+@use "../base";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;700&family=Kalam:wght@300&family=Poppins:wght@500;600&family=Roboto+Mono:wght@300&display=swap');
+
+.rootCont {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    background-color: black;
+
+    .header {
+        max-width: 1300px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .welcome {
+            color: base.$primary-heading-color;
+            font-size: 2.5rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .headerItems {
+            display: flex;
+            list-style: none;
+            // padding: 0.5rem 0;
+            align-items: center;
+
+            .headerItem {
+                margin: 0 1rem;
+                font-size: 1.5rem;
+                color: base.$primary-heading-color;
+            }
+
+            .headerItem:hover {
+                cursor: pointer;
+                color: base.$primary-hover-color;
+                transform: translateY(-2px);
+            }
+
+            // .resume{
+            // }
+        }
+        .img{
+            display: none;
+        }
+        
+    }
+}
+
+@media (max-width: 800px) {
+    .rootCont {
+        .header {
+            .headerItems {
+                display: flex;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 650px){
+    .rootCont {   
+        .header{
+            .headerItems {
+                display: none;
+            }
+            .img{
+                display: block;
+                color: base.$primary-heading-color;
+                padding: 0.2rem 0.8rem;
+                width: max-content;
+                font-size: 1.5rem;
+                border: 5px solid base.$primary-heading-color;
+                text-align: center;
+                border-radius: 22px;
+                transition: 0.5s;
+            }
+
+            .img:hover{
+                box-shadow: 0px 0px 6px 6px base.$primary-heading-color;
+                border: 5px solid transparent;
+                cursor: pointer;
+            }
+
+            .slidermenu{
+                position: fixed;
+                background-color: red;
+                height: 100%;
+                width: 50%;
+                right: 0;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                
+            }
+
+            .slidermenu li{
+                color: base.$primary-heading-color;
+            }
+        }
+    }
+}

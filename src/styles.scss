@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use "../src/app/base";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Kalam:wght@300&family=Poppins:wght@500;600&display=swap');
+
+
+
+html{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: base.$dark-theme;
+}
+
+body{
+    padding: 3rem;
+    margin: auto;
+}
+
+@media (max-width: 700px){
+    body{
+        padding: 0;
+    }
+}
+
+// body{
+//     // max-width: 1300px;
+//     // margin: auto;
+// }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;;
+}

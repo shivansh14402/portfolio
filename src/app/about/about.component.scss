@@ -1,0 +1,225 @@
+@use '../base';
+
+
+
+
+
+.container{
+    background: transparent;
+    padding: 0rem;
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap-reverse;
+    margin-top: 8rem;
+
+
+    .leftCont{
+        width: 50%;
+
+        .greeting{
+            color: base.$primary-heading-color;
+            font-size: 1rem;
+        }
+
+        .name{
+            color: base.$secondary-heading-color;
+            font-size: 4rem;
+            margin: 1rem;
+            margin-left: 0;
+        }
+        
+        .desp{
+            color: base.$class3-heading-color;
+            font-size: 1.3rem;
+            line-height: 2.2rem;
+            font-weight: 300;
+        }
+
+    }
+
+    .rightCont{
+        width: 30rem;
+        height: 25rem;
+        
+    }
+}
+
+
+@media (max-width: 1100px){
+
+    .container{
+
+        justify-content: center;
+        margin-top: 5rem;
+        
+        .leftCont{
+            width: 30rem;
+            // min-width: max-content;
+    
+            .greeting{
+                color: base.$primary-heading-color;
+                font-size: 1rem;
+            }
+    
+            .name{
+                color: base.$secondary-heading-color;
+                font-size: 2.5rem;
+                // margin: 1rem;
+                width: max-content;
+            }
+            
+            .desp{
+                color: base.$class3-heading-color;
+                font-size: 1.1rem;
+                line-height: 1.8rem;
+                font-weight: 300;
+            }
+    
+        }
+    
+        .rightCont{
+            width: 25rem;
+            height: 18rem;
+            margin: 2rem 1rem;
+        }
+    }
+}
+
+@media (max-width: 950px){
+
+    .container{
+        justify-content: space-between;
+        
+        .leftCont{
+            width: 20rem;
+            // min-width: max-content;
+    
+            .greeting{
+                color: base.$primary-heading-color;
+                font-size: 1rem;
+            }
+    
+            .name{
+                color: base.$secondary-heading-color;
+                font-size: 2.2rem;
+                // margin: 1rem;
+                
+                width: max-content;
+            }
+            
+            .desp{
+                color: base.$class3-heading-color;
+                font-size: 16px;
+                line-height: 1.8rem;
+                font-weight: 300;
+            }
+    
+        }
+    
+        .rightCont{
+            width: 20rem;
+            height: 15rem;
+            // margin: 2rem 1rem;
+        }
+    }
+}
+
+@media (max-width: 850px){
+
+    .container{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 5rem;
+        
+        .leftCont{
+            width: 95%;
+            // min-width: max-content;
+    
+            .greeting{
+                color: base.$primary-heading-color;
+                font-size: 1.2rem;
+            }
+    
+            .name{
+                color: base.$secondary-heading-color;
+                font-size: 3rem;
+                // margin: 1rem;
+                max-width: 100%;
+                width: max-content;
+            }
+            
+            .desp{
+                color: base.$class3-heading-color;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-weight: 300;
+            }
+    
+        }
+    
+        .rightCont{
+            width: 20rem;
+            height: 15rem;
+            // margin: 2rem 1rem;
+        }
+    }
+}
+
+
+@media (max-width: 620px){
+
+    .container{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 5rem;
+        padding: 0;
+        
+        .leftCont{
+            width: 100%;
+            // min-width: max-content;
+            padding: 1rem;
+    
+            .greeting{
+                color: base.$primary-heading-color;
+                font-size: 1rem;
+            }
+    
+            .name{
+                color: base.$secondary-heading-color;
+                font-size: 2rem;
+                width: max-content;
+                overflow-wrap: break-word;
+            }
+            
+            .desp{
+                color: base.$class3-heading-color;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+                font-weight: 300;
+            }
+    
+        }
+    
+        .rightCont{
+            width: 20rem;
+            height: 15rem;
+            // margin: 0;
+            // margin: 2rem 1rem;
+        }
+    }
+}
+
+@media (max-width: 350px){
+
+        .rightCont{
+            width: 5rem;
+            height: 7rem;
+            // margin: 0;
+            // margin: 2rem 1rem;
+        }
+}
+
+
+
